@@ -1,2 +1,3 @@
 # haproxy-backend-state
-Nagios plugin to check backends state
+
+Nagios/NRPE compatible plugin for checking HAProxy backends state.
