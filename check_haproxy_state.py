@@ -35,7 +35,7 @@ class AttrConfig(dict):
         super(AttrConfig, self).__init__(*args, **kwargs)
         self.__dict__ = self
 
-config_file = '/etc/haproxy-status.ini'
+config_file = '/etc/check-haproxy-state.ini'
 if os.path.isfile(config_file):
     config = configparser.ConfigParser(dict_type=AttrConfig)
     config.read(config_file)
