@@ -31,6 +31,8 @@ Options:
                         Select backends or frontends!
 ```
 
+This check communicate with a HAProxy by local socket file using `haproxyadmin` library. Some backends or frontends checking can be avaoided by creating or coping file from repo `check-haproxy-state.ini` to `/etc/check-haproxy-state.ini`. The backend or frontend names can be entered after the decimal point this file in the applications line. 
+
 ## Server configuration
 
 - __simple configuration for check HAProxy state__ 
@@ -42,7 +44,7 @@ define command {
 }
 ```
 
-- service check configuration
+- __service check configuration__
 
 ```
 define service {
